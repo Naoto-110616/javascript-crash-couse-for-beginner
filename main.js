@@ -16,8 +16,12 @@ const todos = [
 	},
 ];
 
-const todoText = todos.map(function (todo) {
-	return todo.text;
-});
+const todoCompleted = todos
+	.filter(function (todo) {
+		return todo.isCompleted === true;
+	})
+	.map(function (todo) {
+		return todo.text;
+	});
 
-console.log(todoText);
+console.log(todoCompleted);
