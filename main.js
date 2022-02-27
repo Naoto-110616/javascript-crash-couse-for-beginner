@@ -1,3 +1,3 @@
-const s = "Hello World";
+const s = "technology, computers, it, code";
 
-console.log(s.substring(0, 5).toUpperCase());
+console.log(s.split(", "));
