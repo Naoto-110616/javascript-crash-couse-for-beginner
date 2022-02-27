@@ -1,3 +1,5 @@
-const s = "technology, computers, it, code";
+// Arrays - variables that hold multiple values
 
-console.log(s.split(", "));
+const numbers = new Array(1, 2, 3, 4, 5);
+
+console.log(numbers);
