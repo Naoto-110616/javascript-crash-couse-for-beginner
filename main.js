@@ -1,5 +1,17 @@
 // Arrays - variables that hold multiple values
 
-const numbers = new Array(1, 2, 3, 4, 5);
+const fruits = ["apples", "oranges", "pears"];
 
-console.log(numbers);
+fruits[3] = "grapes";
+
+fruits.push("mangos");
+
+fruits.unshift("strawberries");
+
+fruits.pop();
+
+console.log(Array.isArray("hello"));
+
+console.log(fruits.indexOf("oranges"));
+
+console.log(fruits);
