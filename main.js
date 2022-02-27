@@ -1,17 +1,19 @@
-// Arrays - variables that hold multiple values
+const person = {
+	firstName: "John",
+	lastName: "Doe",
+	age: 30,
+	hobbies: ["music", "movies", "sports"],
+	address: {
+		street: "50 main st",
+		city: "Boston",
+		state: "MA",
+	},
+};
 
-const fruits = ["apples", "oranges", "pears"];
+const {
+	firstName,
+	lastName,
+	address: { city },
+} = person;
 
-fruits[3] = "grapes";
-
-fruits.push("mangos");
-
-fruits.unshift("strawberries");
-
-fruits.pop();
-
-console.log(Array.isArray("hello"));
-
-console.log(fruits.indexOf("oranges"));
-
-console.log(fruits);
+console.log(city);
