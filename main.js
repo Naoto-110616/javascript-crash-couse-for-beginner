@@ -16,6 +16,6 @@ const todos = [
 	},
 ];
 
-const todoJSON = JSON.stringify(todos);
-
-console.log(todoJSON);
+for (let todo of todos) {
+	console.log(todo.id);
+}
