@@ -1,27 +1,12 @@
-const todos = [
-	{
-		id: 1,
-		text: "Take out trash",
-		isCompleted: true,
-	},
-	{
-		id: 2,
-		text: "Meeting with boss",
-		isCompleted: true,
-	},
-	{
-		id: 3,
-		text: "Dentist appt",
-		isCompleted: false,
-	},
-];
+// Constructor function
+function Person(firstName, lastName, dob) {
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.dob = new Date(dob);
+}
 
-const todoCompleted = todos
-	.filter(function (todo) {
-		return todo.isCompleted === true;
-	})
-	.map(function (todo) {
-		return todo.text;
-	});
+// Instantiate object
+const person1 = new Person("John", "Doe", "4-3-1980");
+const person2 = new Person("Mary", "Smith", "3-6-1970");
 
-console.log(todoCompleted);
+console.log(person2.dob.getFullYear())
